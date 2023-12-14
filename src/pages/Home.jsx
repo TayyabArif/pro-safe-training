@@ -4,6 +4,7 @@ import Poster from '../images/poster.jpg'
 import { Card } from '../components/Card'
 import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
+import {motion} from "framer-motion"
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
         <Header />
         <div className=" relative flex justify-between items-center w-[100vw] h-[90vh]">
             <img className='w-full object-cover h-[100%]' src={Poster}/>
-            <div className='wrap-caption w-[60%] z-20 absolute top-[20%] right-[20%]'>
+            <div 
+                className='wrap-caption w-[60%] z-20 absolute top-[20%] right-[20%]'>
                 <p className='text-white text-base font-normal'>ALL YOU NEED IS HERE</p>
                 <h1 className='font-bold my-[1.2rem] text-7xl text-white'>Learn to save lives</h1>
                 <p className='text-white mb-[1.2rem]'>First Aid for Opioid Poisoning Course. Free self-paced online course!</p>
@@ -52,7 +54,12 @@ const Home = () => {
                     <h2 class="mb-12 pb-4 text-center text-3xl font-bold text-[#3B73D0]">Testimonials</h2>
 
                     <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
-                    <div class="mb-6 lg:mb-0">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        exit={{ opacity: 0, y: 50 }}
+                    class="mb-6 lg:mb-0">
                         <div
                         class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                         <div class="flex">
@@ -108,9 +115,14 @@ const Home = () => {
                             </p>
                         </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div class="mb-6 lg:mb-0">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        exit={{ opacity: 0, y: 50 }}
+                    class="mb-6 lg:mb-0">
                         <div
                         class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                         <div class="flex">
@@ -167,9 +179,14 @@ const Home = () => {
                             </p>
                         </div>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div class="mb-0">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 0.5 }}
+                        exit={{ opacity: 0, y: 50 }}
+                    class="mb-0">
                         <div
                         class="relative block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
                         <div class="flex">
@@ -226,7 +243,7 @@ const Home = () => {
                             </p>
                         </div>
                         </div>
-                    </div>
+                    </motion.div>
                     </div>
                 </section>
             </div>
