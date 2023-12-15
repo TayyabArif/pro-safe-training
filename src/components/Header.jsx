@@ -7,10 +7,11 @@ const Header = () => {
         <h1 className="text-2xl font-bold">Logo</h1>
         <nav>
           <ul className="flex space-x-4">
-            <li><a href="#" className="hover:text-[#3B73D0]">Home</a></li>
-            <li><a href="#" className="hover:text-[#3B73D0]">About</a></li>
+            <li><a href="/" className="hover:text-[#3B73D0]">Home</a></li>
+            <li><a href="/about" className="hover:text-[#3B73D0]">About</a></li>
+            <li><a href="/contact" className="hover:text-[#3B73D0]">Contact</a></li>
+            <li><a href="/blog" className="hover:text-[#3B73D0]">Blog</a></li>
             <li><a href="#" className="hover:text-[#3B73D0]">Services</a></li>
-            <li><a href="#" className="hover:text-[#3B73D0]">Contact</a></li>
             <li><a href="#" className="hover:text-[#3B73D0]">ELearning</a></li>
           </ul>
         </nav>
