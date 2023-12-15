@@ -11,7 +11,7 @@ export const Card = () => {
     exit={{ opacity: 0, y: 60 }}
       className="w-full md:w-1/2 xl:w-1/4 px-4"
     >
-    <div className="bg-white rounded-lg overflow-hidden mb-10">
+    <div className="bg-white rounded-lg overflow-hidden mb-10 transform hover:scale-110 transition-transform duration-300">
        <img
           src={CardImage}
           alt="image"

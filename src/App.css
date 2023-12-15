@@ -1,3 +1,26 @@
 .App {
   text-align: center;
 }
+.slider-item:nth-child(1) {
+  display: flex !important;
+}
+
+.slider-item:nth-child(2) {
+  display: flex !important;
+}
+
+.slider-item:nth-child(3) {
+  display: flex !important;
+}
+
+.slider-item:nth-child(4) {
+  display: flex !important;
+}
+
+.slider-item:nth-child(5) {
+  display: flex !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}

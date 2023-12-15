@@ -8,7 +8,7 @@ const About = () => {
     <Header />
     <div className='relative banner h-[70vh] w-full'>
     <img src={aboutBanner} className='w-full h-full object-cover' />
-    <div className='absolute left-[20%] text-center top-[25%] p-6 bg-[#1663e285] flex flex-col  sm:rounded-lg'>
+    <div className='absolute left-[20%] text-center top-[25%] p-6 bg-[#1663e285] hover:bg-blue-600 flex flex-col  sm:rounded-lg transform hover:scale-110 transition-transform duration-300'>
         <h1 className='text-4xl sm:text-5xl text-white font-extrabold tracking-tight'>What we do!</h1>
         <p className='class="text-normal text-lg sm:text-2xl font-medium text-white mt-2'>ProSafe First Aid Training School has been providing first aid training since 1999</p>
         <div class="mt-8 flex flex-wrap justify-center gap-4 text-center">
@@ -61,7 +61,7 @@ const About = () => {
     <div className='mx-auto container feature-section my-10'>
     <h1 className='text-lg font-medium sm:text-5xl font-extrabold text-[#3B73D0] tracking-tight'>Features</h1>
         <div class=" mx-auto max-w-5xl gap-12 grid grid-cols-1 md:grid-cols-3  items-start justify-center md:justify-between mt-10">
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1  transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">
@@ -73,7 +73,7 @@ const About = () => {
         <h3 class="text-3xl font-bold">6</h3>
         <p>Campuses</p>
     </div>
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1  transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">
@@ -84,7 +84,7 @@ const About = () => {
         <h3 class="text-3xl font-bold">20 +</h3>
         <p>Years of Experience</p>
     </div>
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1  transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">
@@ -95,7 +95,7 @@ const About = () => {
         <h3 class="text-3xl font-bold">40 +</h3>
         <p>Instructors</p>
     </div>
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1  transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">
@@ -104,9 +104,9 @@ const About = () => {
             </svg>
         </div>
         <h3 class="text-3xl font-bold">50+</h3>
-        <p>Cources</p>
+        <p>Courses</p>
     </div>
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1  transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">
@@ -117,7 +117,7 @@ const About = () => {
         <h3 class="text-3xl font-bold">100,000</h3>
         <p>Free Coffee Consumed</p>
     </div>
-    <div class="grid gap-4 justify-items-center text-center md:flex-1">
+    <div class="grid gap-4 justify-items-center text-center md:flex-1 transform hover:scale-110 transition-transform duration-300">
         <div class=" rounded-full border-8 border-[#e11d48] p-4 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-14 h-14">

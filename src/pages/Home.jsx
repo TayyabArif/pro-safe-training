@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
 import {motion} from "framer-motion"
 import comb from '../images/comb.svg'
+import NewBrands from '../components/TrainingPartners'
 
 const Home = () => {
   return (
@@ -13,12 +14,12 @@ const Home = () => {
         <Header />
         <div className=" relative flex justify-between items-center w-[100vw] h-[90vh]">
             <img className='w-full object-cover h-[100%]' src={Poster}/>
-            <div 
+            <div
                 className='wrap-caption w-[60%] z-20 absolute top-[20%] right-[20%]'>
                 <p className='text-white text-base font-normal'>ALL YOU NEED IS HERE</p>
                 <h1 className='font-bold my-[1.2rem] text-7xl text-white'>Learn to save lives</h1>
                 <p className='text-white mb-[1.2rem]'>First Aid for Opioid Poisoning Course. Free self-paced online course!</p>
-                <button className='bg-[#B02526FF] py-[0.9rem] px-[2.5rem] rounded-[2rem] text-white'>Enroll now</button>
+                <button className='bg-[#B02526FF] hover:bg-[#B02526FF]/90 py-[0.9rem] px-[2.5rem] rounded-[2rem] text-white transform hover:scale-110 transition-transform duration-300 cursor-pointer'>Enroll now</button>
             </div>
             <div className='absolute top-0 left-0 w-full h-full bg-[#3B73D0] opacity-60 z-10'>
             </div>
@@ -46,6 +47,7 @@ const Home = () => {
                 <Card />
             </div>
         </div>
+        <NewBrands />
         <div className='contactSection'>
             <ContactUs />
         </div>
@@ -55,7 +57,7 @@ const Home = () => {
                     <h2 class="mb-12 pb-4 text-center text-3xl font-bold text-[#3B73D0]">Testimonials</h2>
 
                     <div class="grid gap-6 md:grid-cols-3 xl:gap-x-12">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -118,7 +120,7 @@ const Home = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -182,7 +184,7 @@ const Home = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -270,7 +272,9 @@ const Home = () => {
              text-base text-white
              font-medium
              hover:border-primary hover:bg-primary
+             hover:bg-[#e11d48]/90
              transition
+             transform hover:scale-110 transition-transform duration-300
              "
              >
           Request More Info
@@ -288,7 +292,9 @@ const Home = () => {
              text-base text-white
              font-medium
              hover:border-primary hover:bg-primary
+             hover:bg-[#e11d48]/90
              transition
+             transform hover:scale-110 transition-transform duration-300
              "
              >
           Apply Now
@@ -306,7 +312,9 @@ const Home = () => {
              text-base text-white
              font-medium
              hover:border-primary hover:bg-primary
+             hover:bg-[#e11d48]/90
              transition
+             transform hover:scale-110 transition-transform duration-300
              "
              >
           Explore Programs
