@@ -5,6 +5,7 @@ import { Card } from '../components/Card'
 import Footer from '../components/Footer'
 import ContactUs from '../components/ContactUs'
 import {motion} from "framer-motion"
+import comb from '../images/comb.svg'
 
 const Home = () => {
   return (
@@ -246,6 +247,71 @@ const Home = () => {
                     </motion.div>
                     </div>
                 </section>
+            </div>
+        </div>
+        <div className="whatsNextSection  relative py-[2rem] mt-[-2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className='absolute w-full h-full inset-0 bg-[#3B73D0] z-[-20]'>
+                {/* <img src={comb} className=''/> */}
+            </div>
+            <div className='container mx-auto'>
+
+            <h1 className='text-5xl font-bold text-white'>Ready for what's next</h1>
+            <div className='flex justify-around  my-[2rem]'>
+            <a
+             href="javascript:void(0)"
+             className="
+             inline-block
+             py-3
+             px-7
+             w-[15rem]
+             bg-[#e11d48]
+             border border-[#e11d48]
+             rounded-full
+             text-base text-white
+             font-medium
+             hover:border-primary hover:bg-primary
+             transition
+             "
+             >
+          Request More Info
+          </a>
+          <a
+             href="javascript:void(0)"
+             className="
+             inline-block
+             w-[15rem]
+             py-3
+             px-7
+             bg-[#e11d48]
+             border border-[#e11d48]
+             rounded-full
+             text-base text-white
+             font-medium
+             hover:border-primary hover:bg-primary
+             transition
+             "
+             >
+          Apply Now
+          </a>
+          <a
+             href="javascript:void(0)"
+             className="
+             inline-block
+             w-[15rem]
+             py-3
+             px-7
+             bg-[#e11d48]
+             border border-[#e11d48]
+             rounded-full
+             text-base text-white
+             font-medium
+             hover:border-primary hover:bg-primary
+             transition
+             "
+             >
+          Explore Programs
+          </a>
+            </div>
             </div>
         </div>
         <Footer />
