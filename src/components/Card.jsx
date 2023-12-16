@@ -13,17 +13,18 @@ export const Card = () => {
     >
     <div className="bg-white rounded-lg overflow-hidden mb-10 transform hover:scale-110 transition-transform duration-300">
        <img
+         className='border-b-4 border-[#3B73D0]'
           src={CardImage}
           alt="image"
           class="w-full"
-          />
+      />
        <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
           <h3>
              <a
                 href="javascript:void(0)"
                 className="
                 font-semibold
-                text-dark text-xl
+                text-[#3B73D0] text-xl
                 sm:text-[22px]
                 md:text-xl
                 lg:text-[22px]
