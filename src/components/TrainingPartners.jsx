@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Card } from "./Card";
+import Divider from "./Divider";
 
 function NewBrands() {
   const settings = {
@@ -27,11 +28,11 @@ function NewBrands() {
     <div>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl md:px-4">
-          <h2 className="mb-4 pl-5 text-xl md:text-2xl font-bold tracking-tight leading-tight text-start text-[#a23c5d] dark:text-primary-text ">
+          <h2 className="mb-4 pl-5 text-xl md:text-3xl font-bold tracking-tight leading-tight text-center text-[#a23c5d] dark:text-primary-text ">
             Still don't know what certification you need?
           </h2>
-          <h2 className="mb-4 pl-5 lg:mb-7 text-2xl md:text-3xl font-bold tracking-tight leading-tight text-start text-gray-900 dark:text-primary-text w-full">
-            <p className="w-[80%]">
+          <h2 className="mb-4 pl-5 lg:mb-10 text-2xl md:text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-primary-text w-full">
+            <p className="">
               Discover Our Programs
             </p>
           </h2>

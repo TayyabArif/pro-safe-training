@@ -20,7 +20,7 @@ import NewBrands from '../components/TrainingPartners'
 
 const Home = () => {
   return (
-    <div className='home-page'>
+    <div className='home-page font-[Avenir]'>
         <Header />
         <video class="elementor-video" src="https://dorsetcolleges.com/wp-content/uploads/2023/11/Dorset-V5.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
         {/* <div className='banner w-full h-[70vh] flex flex-col justify-center items-center ' style={{backgroundImage:`url(${homeBanner})`, backgroundPosition: 'center'}}>
@@ -44,7 +44,7 @@ const Home = () => {
             <p className='text-white leading-normal font-normal mb-[2rem]'>ProSafe First Aid Training School has been providing first aid training since 1999. We have 6 Campuses located in Surrey, Abbotsford, Burnaby, Vancouver, Port Coquitlam, and Richmond. While ProSafe is known for delivering First Aid training courses, we also offer classes in health and safety, mobile equipment operation, workplace safety and customer service.  In addition to training services, we also supply first aid supplies and equipment. Our professional and experienced instructors at ProSafe take pride in delivering the highest quality of training and offering flexible program scheduling in multiple languages</p>
             </div>
         </div> */}
-        <div className='cardSection mt-5 flex flex-col items-center justify-center mb-[2rem] bg-white'>
+        <div className='cardSection mt-5 flex flex-col items-center justify-center bg-white'>
             {/* <div>
                 <h1 className=' mb-[1.2rem] text-7xl text-[#3B73D0]'>Cources We Offer</h1>
                 <Divider />
@@ -59,25 +59,25 @@ const Home = () => {
             </div> */}
             <NewBrands />
         </div>
-        <div className='relative quote-section bg-[#0c2340] w-full h-[100vh] flex items-center'>
-            <div className='absolute top-8 left-6 w-[10vw] h-[10vh]'>
+        <div className='relative quote-section bg-[#0c2340] w-full h-[140vh] flex items-center'>
+            <div className='absolute top-[13%] left-[5%] w-[10vw] h-[10vh]'>
                 <img src={openQuote}/>
             </div>
-            <div className='absolute bottom-8 right-6 w-[10vw] h-[10vh'>
+            <div className='absolute bottom-[21%] right-10 w-[10vw] h-[10vh]'>
             <img src={closeQuote}/>
             </div>
-            <div className='container mx-auto h-[70vh] flex'>
-                <div className='flex-1 h-full rounded-2xl overflow-hidden mr-[-16px]'>
-                    <img className='w-full h-full object-cover mt-[-24px] rounded-2xl' src={testimonialImage}/>
+            <div className='container mx-auto h-[70vh] flex px-10'>
+                <div className='flex-1 h-full rounded-2xl overflow-hidden mr-[-16px] -mt-5'>
+                    <img className='w-full h-full object-cover rounded-2xl' src={testimonialImage}/>
                 </div>
-                <div className='flex-1 bg-[#fff] flex justify-center items-center p-10 rounded-2xl mt-6 ml-[-16px]'>
-                    <h2 className='text-4xl text-justify'>I’ve taken many first aid/CPR classes over the years and this was one of the best! Ishan is a wonderful instructor! He has a nice way of explaining everything and making the class interesting and engaging. I learned a lot!</h2>
+                <div className='flex-1 bg-[#fff] flex justify-center items-center p-10 rounded-2xl mt-7 ml-[-16px]'>
+                    <h2 className='text-3xl font-medium text-justify font-[Avenir]'>I’ve taken many first aid/CPR classes over the years and this was one of the best! Ishan is a wonderful instructor! He has a nice way of explaining everything and making the class interesting and engaging. I learned a lot!</h2>
                 </div>
             </div>
         </div>
-        <div className='our-mission my-10 flex h-[60vh]'>
+        <div className='our-mission mb-10 mt-14 flex'>
             <div className='flex-1 p-8 justify-start '>
-                <h1 className=' mb-[1.2rem] text-5xl text-[#3B73D0]'>Explore our mission</h1>
+                <h1 className='mb-[1.2rem] text-5xl font-bold text-gray-800'>Explore our mission</h1>
                 <Divider />
                 <p className='mb-[1.2rem] text-base text-body-color leading-relaxed'>If you are a professional instructor looking for a full-time career, or a recent graduate of one of our advanced classes who wants to get a foot in the door, talk to us if you are interested in learning more about having a career at ProSafe. We continue to look for new instructors to join our team who are talented and passionate in teaching and sharing. Not only we offer a flexible schedule and competitive compensation, but also we help you build a fulfilling career that fits your life goals.  If you are interested in teaching for ProSafe please contact us at info@prosafefirstaid.ca</p>
                     <a
@@ -106,11 +106,11 @@ const Home = () => {
             </div>
         </div>
         <div className='cardSection my-6 flex flex-col items-center justify-center mb-[2rem] bg-white '>
-            <div className='text-center mt-4'>
-                <h1 className=' mb-[1.2rem] text-7xl text-[#3B73D0]'>Prosafe News</h1>
+            <div className='text-center mt-10 w-[50%]'>
+                <h1 className='mb-[1.2rem] text-7xl text-gray-800 font-bold w-full'>Prosafe News</h1>
                 <Divider />
             </div>
-            <div className='container flex flex-col drop-shadow py-6 rounded-md' style={{boxShadow: '1px 2px 9px #e9e9e9bf'}}>
+            <div className='container flex flex-col pb-6 rounded-md'>
                 <div className=' flex container gap-4 items-center justify-center flex-wrap'>
                     <EventCard />
                     <EventCard />
@@ -131,6 +131,7 @@ const Home = () => {
                     font-medium
                     hover:border-primary hover:bg-primary
                     hover:bg-[#e11d48]/90
+                    hover:text-white
                     transition
                     transform hover:scale-110 transition-transform duration-300
                     "

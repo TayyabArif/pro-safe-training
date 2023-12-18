@@ -11,7 +11,7 @@ const EventCard = () => {
    //  exit={{ opacity: 0, y: 60 }}
       className="w-[30%] px-4 "
     >
-    <div className="relative bg-white mt-4 rounded-md h-[30rem] overflow-hidden shadow-lg mb-10">
+    <div className="relative bg-white mt-4 rounded-xl h-[30rem] overflow-hidden shadow-lg mb-10 border border-1 border-gray-300">
         <div className='absolute left-2 text-white rounded-b w-fit p-4 bg-[#e11d48]'>
             <h2 className='text-3xl'>15</h2>
             <p>Jan 2024</p>
