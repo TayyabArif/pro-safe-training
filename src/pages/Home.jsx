@@ -14,6 +14,7 @@ import ContactUs from '../components/ContactUs'
 import comb from '../images/comb.svg'
 import ourMission from '../images/ourMission.jpg'
 import testimonialImage from '../images/testimonialSectionGirl.jpg'
+import AllCourses from '../components/AllCourses'
 import whyChooseUslImage from '../images/whyChooseUs.jpg'
 import NewBrands from '../components/TrainingPartners'
 // import NewBrands from '../components/TrainingPartners'
@@ -58,7 +59,7 @@ const Home = () => {
                 <Card />
                 <Card />
             </div> */}
-            <NewBrands />
+            <AllCourses />
         </div>
         <div className='relative quote-section bg-[#0c2340] w-full h-[140vh] flex items-center'>
             <div className='absolute top-[13%] left-[5%] w-[10vw] h-[10vh]'>
@@ -106,7 +107,8 @@ const Home = () => {
                 <img src={ourMission} className='w-full h-full rounded-md object-cover'/>
             </div>
         </div>
-        <div className='cardSection my-6 flex flex-col items-center justify-center mb-[2rem] bg-white '>
+        <NewBrands />
+        <div className='cardSection my-6 flex flex-col items-center justify-center mb-[3rem] bg-white '>
             <div className='text-center mt-10 w-[50%]'>
                 <h1 className='mb-[1.2rem] text-7xl text-gray-800 font-bold w-full'>Prosafe News</h1>
                 <Divider />
@@ -142,15 +144,14 @@ const Home = () => {
                 </div>
             </div>
         </div>
-        <div>
-            <ContactUs />
-        </div>
-        <div className='whyChooseUs container h-[70vh] mx-auto flex my-8'>
+        <div className='whyChooseUs container mx-auto flex my-8 mt-10'>
             <div className='image-section flex-1'>
+            <div className='pl-5 w-full h-full'>
             <img className='w-full h-full object-cover rounded-md' src={whyChooseUslImage}/>
             </div>
+            </div>
             <div className='content flex-1 flex flex-col px-8 justify-start'>
-            <h2 className="mb-4 pl-5 text-xl text-left md:text-3xl font-bold tracking-tight leading-tight text-[#a23c5d] dark:text-primary-text ">
+            <h2 className="mb-4 text-xl text-left md:text-3xl font-bold tracking-tight leading-tight text-[#a23c5d] dark:text-primary-text ">
                 Why CHoose Us
             </h2>
             <h1 className='mb-[1.2rem] text-5xl font-bold text-gray-800 text-left'>Have a look on our Insights</h1>
@@ -238,6 +239,9 @@ const Home = () => {
              </div>
             </div>
             </div>
+        </div>
+        <div>
+            <ContactUs />
         </div>
         <div className="whatsNextSection  relative py-[2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className='absolute w-full h-full inset-0 bg-[#3B73D0] z-[-20]'>
