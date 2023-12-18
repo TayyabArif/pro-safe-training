@@ -4,11 +4,15 @@ import Footer from '../components/Footer'
 import homeBanner from '../images/homePoster.jpg'
 import grill from '../images/grill.svg'
 import Divider from '../components/Divider'
+import openQuote from '../images/quote-open-yellowOL.svg'
+import closeQuote from '../images/quote-close-pink.svg'
 // import Poster from '../images/poster.jpg'
 import { Card } from '../components/Card'
 // import ContactUs from '../components/ContactUs'
 // import {motion} from "framer-motion"
 import comb from '../images/comb.svg'
+import ourMission from '../images/ourMission.jpg'
+import testimonialImage from '../images/testimonialSectionGirl.jpg'
 // import NewBrands from '../components/TrainingPartners'
 
 
@@ -30,7 +34,7 @@ const Home = () => {
                 </a>
             </div>
         </div>
-        <div  className="aboutSection relative w-full py-10" style={{backgroundImage:`url(${grill})`, backgroundPosition: 'center'}}>
+        <div  className="aboutSection relative w-full py-16" style={{backgroundImage:`url(${grill})`, backgroundPosition: 'center'}}>
             <div className='absolute top-0 right-0 w-full h-full bg-[#0c2340] z-[-2]'></div>
             <div className='content w-[70%] mx-auto'>
             <h1 className='text-5xl font-bold leading-normal text-[#b02526] '>GET EMPLOYED, WORK SAFELY, SAVE LIVES.</h1>
@@ -51,7 +55,53 @@ const Home = () => {
                 <Card />
             </div>
         </div>
-        <div className="whatsNextSection  relative py-[2rem] mt-[-2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className='relative quote-section bg-[#0c2340] w-full h-[100vh] flex items-center'>
+            <div className='absolute top-8 left-6 w-[10vw] h-[10vh]'>
+                <img src={openQuote}/>
+            </div>
+            <div className='absolute bottom-8 right-6 w-[10vw] h-[10vh'>
+            <img src={closeQuote}/>
+            </div>
+            <div className='container mx-auto h-[70vh] flex'>
+                <div className='flex-1 h-full rounded-2xl overflow-hidden mr-[-16px]'>
+                    <img className='w-full h-full object-cover mt-[-24px] rounded-2xl' src={testimonialImage}/>
+                </div>
+                <div className='flex-1 bg-[#fff] flex justify-center items-center p-4 rounded-2xl mt-6 ml-[-16px]'>
+                    <h2 className='text-4xl'>I’ve taken many first aid/CPR classes over the years and this was one of the best! Ishan is a wonderful instructor! He has a nice way of explaining everything and making the class interesting and engaging. I learned a lot!</h2>
+                </div>
+            </div>
+        </div>
+        <div className='our-mission my-6 flex h-[60vh]'>
+            <div className='flex-1 p-4 justify-start'>
+                <h1 className=' mb-[1.2rem] text-5xl text-[#3B73D0]'>Explore our mission</h1>
+                <Divider />
+                <p className='mb-[1.2rem] text-base text-body-color leading-relaxed'>If you are a professional instructor looking for a full-time career, or a recent graduate of one of our advanced classes who wants to get a foot in the door, talk to us if you are interested in learning more about having a career at ProSafe. We continue to look for new instructors to join our team who are talented and passionate in teaching and sharing. Not only we offer a flexible schedule and competitive compensation, but also we help you build a fulfilling career that fits your life goals.  If you are interested in teaching for ProSafe please contact us at info@prosafefirstaid.ca</p>
+                    <a
+                    href="javascript:void(0)"
+                    className="
+                    inline-block
+                    w-[15rem]
+                    py-3
+                    px-7
+                    bg-[#e11d48]
+                    border border-[#e11d48]
+                    rounded-full
+                    text-base text-white
+                    font-medium
+                    hover:border-primary hover:bg-primary
+                    hover:bg-[#e11d48]/90
+                    transition
+                    transform hover:scale-110 transition-transform duration-300
+                    "
+                    >
+                    Explore More
+                    </a>
+            </div>
+            <div className='flex-1 w-full h-full p-4'>
+                <img src={ourMission} className='w-full h-full rounded-md object-cover'/>
+            </div>
+        </div>
+        <div className="whatsNextSection  relative py-[2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className='absolute w-full h-full inset-0 bg-[#3B73D0] z-[-20]'>
             </div>
             <div className='container mx-auto'>

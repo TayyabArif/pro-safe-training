@@ -9,16 +9,16 @@ export const Card = () => {
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 1, delay: 0.5 }}
     exit={{ opacity: 0, y: 60 }}
-      className="w-full md:w-1/2 xl:w-1/4 px-4"
+      className="w-full md:w-1/2 xl:w-[30%] px-4"
     >
     <div className="bg-white rounded-lg overflow-hidden mb-10 transform hover:scale-110 transition-transform duration-300">
        <img
-         className='border-b-4 border-[#3B73D0]'
+         className=''
           src={CardImage}
           alt="image"
           class="w-full"
       />
-       <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
+       <div class="p-8 sm:p-9 md:p-7 xl:p-9 text-center border-t-4 border-[#3B73D0]">
           <h3>
              <a
                 href="javascript:void(0)"
