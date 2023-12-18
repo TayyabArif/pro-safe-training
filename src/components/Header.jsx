@@ -4,10 +4,14 @@ import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [selected, setSelected] = useState("Home")
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const toggleDropdown = (visible) => {
+    setIsDropdownVisible(visible);
+  };
   const navigate = useNavigate()
   return (
     <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="/" class="flex items-center">
           <img
@@ -101,7 +105,7 @@ const Header = () => {
             <li>
               <p
                 href="/contact"
-                class={`${selected === "Contact" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer`}
+                class={`${selected === "Contact" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
                 onClick={() => {
                   setSelected('Contact')
                   navigate("/contact")
@@ -112,7 +116,7 @@ const Header = () => {
             </li>
             <li>
               <p
-                class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer`}
+                class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
                 onClick={() => {
                   setSelected('Blog')
                   navigate("/blog")
@@ -121,6 +125,135 @@ const Header = () => {
                 Blog
               </p>
             </li>
+            <div className='flex flex-col items-center'>
+              <div class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} flex items-center py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
+                onMouseEnter={() => toggleDropdown(true)}
+                onMouseLeave={() => toggleDropdown(false)}
+              >
+                Courses
+                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+              </svg>
+              </div>
+              {isDropdownVisible && (
+              <div id="dropdown" class="z-10 bg-white absolute top-20 divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 h-[90%] overflow-scroll"
+                  onMouseEnter={() => toggleDropdown(true)}
+                  onMouseLeave={() => toggleDropdown(false)}
+              >
+                <div className='flex gap-5 p-5'>
+                  <div className='flex flex-col px-5 border border-l-0 border-t-0 border-b-0 border-r-2 border-r-gray-300'>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold'>
+                      WORKSAFE BC FIRST AID (OFA) TRAINING
+                    </h2>
+                    <div className='flex flex-col gap-2 items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Occupational First Aid (OFA) Level 1
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Occupational First Aid (OFA) Level 1
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Occupational First Aid (OFA) Level 1
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Occupational First Aid (OFA) Level 1
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Occupational First Aid (OFA) Level 1
+                      </p>
+                    </div>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold mt-4'>
+                      TRAFFIC CONTROL AND MOBILE EQUIPMEN
+                    </h2>
+                    <div className='flex flex-col gap-2 items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Traffic Control Person
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Traffic Control Person
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Traffic Control Person
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Traffic Control Person
+                      </p>
+                    </div>
+                  </div>
+                  <div className='flex flex-col px-5 border border-l-0 border-t-0 border-b-0 border-r-2 border-r-gray-300'>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold'>
+                      CANADIAN RED CROSS FIRST AID TRAINING
+                    </h2>
+                    <div className='flex flex-col gap-2 items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                    </div>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold mt-4'>
+                    CANADIAN RED CROSS ADVANCED FIRST AID TRAINING
+                    </h2>
+                    <div className='flex flex-col gap-2 items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                    </div>
+                  </div>
+                  <div className='flex flex-col px-5 border border-l-0 border-t-0 border-b-0 border-r-2 border-r-gray-300'>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold'>
+                    WORKPLACE SAFETY TRAINING
+                    </h2>
+                    <div className='flex flex-col gap-2 text-start items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> Standard First Aid with CPR/AED Level C
+                      </p>
+                    </div>
+                    <h2 className='text-2xl text-[#e11d48] text-start font-semibold mt-4'>
+                      AQUATICS
+                    </h2>
+                    <div className='flex flex-col gap-2 items-start'>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                      <p>
+                        <span className='font-bold text-3xl mr-1'>.</span> First Responder
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              )}
+            </div>
+
             <li>
               <a
                 href="#"

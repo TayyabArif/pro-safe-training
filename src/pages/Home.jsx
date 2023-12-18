@@ -44,7 +44,7 @@ const Home = () => {
             <p className='text-white leading-normal font-normal mb-[2rem]'>ProSafe First Aid Training School has been providing first aid training since 1999. We have 6 Campuses located in Surrey, Abbotsford, Burnaby, Vancouver, Port Coquitlam, and Richmond. While ProSafe is known for delivering First Aid training courses, we also offer classes in health and safety, mobile equipment operation, workplace safety and customer service.  In addition to training services, we also supply first aid supplies and equipment. Our professional and experienced instructors at ProSafe take pride in delivering the highest quality of training and offering flexible program scheduling in multiple languages</p>
             </div>
         </div> */}
-        <div className='cardSection mt-5 flex flex-col items-center justify-center bg-white'>
+        <div className='cardSection flex flex-col items-center justify-center bg-white'>
             {/* <div>
                 <h1 className=' mb-[1.2rem] text-7xl text-[#3B73D0]'>Cources We Offer</h1>
                 <Divider />
