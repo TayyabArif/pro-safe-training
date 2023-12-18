@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactUs = () => {
   return (
-    <div class="my-24 bg-white mx-auto md:px-6">
+    <div class="my-20 mx-auto md:px-6">
   <section class="mb-32">
     <div
       class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://mdbcdn.b-cdn.net/img/new/textures/full/171.jpg')]">
