@@ -8,7 +8,8 @@ import openQuote from '../images/quote-open-yellowOL.svg'
 import closeQuote from '../images/quote-close-pink.svg'
 // import Poster from '../images/poster.jpg'
 import { Card } from '../components/Card'
-// import ContactUs from '../components/ContactUs'
+import EventCard from '../components/EventCard'
+import ContactUs from '../components/ContactUs'
 // import {motion} from "framer-motion"
 import comb from '../images/comb.svg'
 import ourMission from '../images/ourMission.jpg'
@@ -69,13 +70,13 @@ const Home = () => {
                 <div className='flex-1 h-full rounded-2xl overflow-hidden mr-[-16px]'>
                     <img className='w-full h-full object-cover mt-[-24px] rounded-2xl' src={testimonialImage}/>
                 </div>
-                <div className='flex-1 bg-[#fff] flex justify-center items-center p-4 rounded-2xl mt-6 ml-[-16px]'>
-                    <h2 className='text-4xl'>I’ve taken many first aid/CPR classes over the years and this was one of the best! Ishan is a wonderful instructor! He has a nice way of explaining everything and making the class interesting and engaging. I learned a lot!</h2>
+                <div className='flex-1 bg-[#fff] flex justify-center items-center p-10 rounded-2xl mt-6 ml-[-16px]'>
+                    <h2 className='text-4xl text-justify'>I’ve taken many first aid/CPR classes over the years and this was one of the best! Ishan is a wonderful instructor! He has a nice way of explaining everything and making the class interesting and engaging. I learned a lot!</h2>
                 </div>
             </div>
         </div>
-        <div className='our-mission my-6 flex h-[60vh]'>
-            <div className='flex-1 p-4 justify-start'>
+        <div className='our-mission my-10 flex h-[60vh]'>
+            <div className='flex-1 p-8 justify-start '>
                 <h1 className=' mb-[1.2rem] text-5xl text-[#3B73D0]'>Explore our mission</h1>
                 <Divider />
                 <p className='mb-[1.2rem] text-base text-body-color leading-relaxed'>If you are a professional instructor looking for a full-time career, or a recent graduate of one of our advanced classes who wants to get a foot in the door, talk to us if you are interested in learning more about having a career at ProSafe. We continue to look for new instructors to join our team who are talented and passionate in teaching and sharing. Not only we offer a flexible schedule and competitive compensation, but also we help you build a fulfilling career that fits your life goals.  If you are interested in teaching for ProSafe please contact us at info@prosafefirstaid.ca</p>
@@ -103,6 +104,44 @@ const Home = () => {
             <div className='flex-1 w-full h-full p-4'>
                 <img src={ourMission} className='w-full h-full rounded-md object-cover'/>
             </div>
+        </div>
+        <div className='cardSection my-6 flex flex-col items-center justify-center mb-[2rem] bg-white '>
+            <div className='text-center mt-4'>
+                <h1 className=' mb-[1.2rem] text-7xl text-[#3B73D0]'>Prosafe News</h1>
+                <Divider />
+            </div>
+            <div className='container flex flex-col drop-shadow py-6 rounded-md' style={{boxShadow: '1px 2px 9px #e9e9e9bf'}}>
+                <div className=' flex container gap-4 items-center justify-center flex-wrap'>
+                    <EventCard />
+                    <EventCard />
+                    <EventCard />
+                </div>
+                <div>
+                <a
+                    href="javascript:void(0)"
+                    className="
+                    inline-block
+                    w-[15rem]
+                    py-3
+                    px-7
+                    text-[#e11d48]
+                    border border-[#e11d48]
+                    rounded-full
+                    text-base
+                    font-medium
+                    hover:border-primary hover:bg-primary
+                    hover:bg-[#e11d48]/90
+                    transition
+                    transform hover:scale-110 transition-transform duration-300
+                    "
+                    >
+                    See All
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ContactUs />
         </div>
         <div className="whatsNextSection  relative py-[2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className='absolute w-full h-full inset-0 bg-[#3B73D0] z-[-20]'>
