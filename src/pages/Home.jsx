@@ -14,6 +14,7 @@ import ContactUs from '../components/ContactUs'
 import comb from '../images/comb.svg'
 import ourMission from '../images/ourMission.jpg'
 import testimonialImage from '../images/testimonialSectionGirl.jpg'
+import whyChooseUslImage from '../images/whyChooseUs.jpg'
 import NewBrands from '../components/TrainingPartners'
 // import NewBrands from '../components/TrainingPartners'
 
@@ -143,6 +144,100 @@ const Home = () => {
         </div>
         <div>
             <ContactUs />
+        </div>
+        <div className='whyChooseUs container h-[70vh] mx-auto flex my-8'>
+            <div className='image-section flex-1'>
+            <img className='w-full h-full object-cover rounded-md' src={whyChooseUslImage}/>
+            </div>
+            <div className='content flex-1 flex flex-col px-8 justify-start'>
+            <h2 className="mb-4 pl-5 text-xl text-left md:text-3xl font-bold tracking-tight leading-tight text-[#a23c5d] dark:text-primary-text ">
+                Why CHoose Us
+            </h2>
+            <h1 className='mb-[1.2rem] text-5xl font-bold text-gray-800 text-left'>Have a look on our Insights</h1>
+            <p className='mb-[1.2rem] text-base text-body-color leading-relaxed'>If you are a professional instructor looking for a full-time career, or a recent graduate of one of our advanced classes who wants to get a foot in the door, talk to us if you are interested in learning more about having a career at ProSafe.</p>
+            <div className='grid grid-cols-2 gap-4'>
+            <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+             <div className='flex w-full items-center gap-2 mb-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#e11d48" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <p className="text-base text-body-color leading-relaxed">
+                  Good and strong customer service
+                  </p>
+             </div>
+            </div>
+            </div>
         </div>
         <div className="whatsNextSection  relative py-[2rem]  overflow-hidden" style={{ backgroundImage: `url(${comb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className='absolute w-full h-full inset-0 bg-[#3B73D0] z-[-20]'>
