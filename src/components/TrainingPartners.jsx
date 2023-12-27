@@ -27,10 +27,10 @@ function NewBrands() {
     <div>
       <section className="bg-gray-150">
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl md:px-4">
-          <h2 className="mb-8 text-4xl md:text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-primary-text ">
+          <h2 className="mb-8 text-4xl md:text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 ">
             Training partners
           </h2>
-          <h2 className="mb-8 lg:mb-16 text-2xl md:text-2xl font-medium tracking-tight leading-tight text-center text-gray-900 dark:text-primary-text w-full flex justify-center">
+          <h2 className="mb-8 lg:mb-16 text-2xl md:text-2xl font-medium tracking-tight leading-tight text-center text-gray-900 w-full flex justify-center">
             <p className="w-[80%]">
               Our company is committed to providing the best first aid training available, in collaboration with the Canadian Red Cross, WorkSafe BC and other trusted organizations.
             </p>

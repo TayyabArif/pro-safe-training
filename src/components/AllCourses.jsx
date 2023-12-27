@@ -26,12 +26,12 @@ function AllCourses() {
 
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white">
         <div className="py-8 lg:py-16 mx-auto max-w-screen-xl md:px-4">
-          <h2 className="mb-4 pl-5 text-xl md:text-3xl font-bold tracking-tight leading-tight text-center text-[#a23c5d] dark:text-primary-text ">
+          <h2 className="mb-4 pl-5 text-xl md:text-3xl font-bold tracking-tight leading-tight text-center text-[#a23c5d]  ">
             Still don't know what certification you need?
           </h2>
-          <h2 className="mb-4 pl-5 lg:mb-10 text-2xl md:text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-primary-text w-full">
+          <h2 className="mb-4 pl-5 lg:mb-10 text-2xl md:text-5xl font-bold tracking-tight leading-tight text-center text-gray-900 w-full">
             <p className="">
               Discover Our Programs
             </p>

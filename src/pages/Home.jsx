@@ -153,7 +153,7 @@ const Home = () => {
             </div>
             </div>
             <div className='content flex-1 flex flex-col px-8 justify-start'>
-            <h2 className="mb-4 text-xl text-left md:text-3xl font-bold tracking-tight leading-tight text-[#a23c5d] dark:text-primary-text ">
+            <h2 className="mb-4 text-xl text-left md:text-3xl font-bold tracking-tight leading-tight text-[#a23c5d]">
                 Why CHoose Us
             </h2>
             <h1 className='mb-[1.2rem] text-5xl font-bold text-gray-800 text-left'>Have a look on our Insights</h1>

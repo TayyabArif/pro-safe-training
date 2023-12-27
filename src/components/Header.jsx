@@ -11,7 +11,7 @@ const Header = () => {
   const navigate = useNavigate()
   return (
     <header>
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
+    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-5 ">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="/" class="flex items-center">
           <img
@@ -19,13 +19,13 @@ const Header = () => {
             class="mr-3 h-6 sm:h-9"
             alt="Flowbite Logo"
           />
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+          <span class="self-center text-xl font-semibold whitespace-nowrap ">
             ProSafe
           </span>
         </a>
         <div class="flex items-center lg:order-2">
           <p
-            class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 cursor-pointer"
+            class="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2  focus:outline-none cursor-pointer"
             onClick={() => {
               navigate("/login")
             }}
@@ -33,7 +33,7 @@ const Header = () => {
             Log in
           </p>
           <p
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 cursor-pointer"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none  cursor-pointer"
             onClick={() => {
               navigate("/register")
             }}
@@ -43,7 +43,7 @@ const Header = () => {
           <button
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
@@ -81,7 +81,7 @@ const Header = () => {
           <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
             <li>
               <p
-                class={`${selected === "Home" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer`}
+                class={`${selected === "Home" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 cursor-pointer`}
                 aria-current="page"
                 onClick={() => {
                   navigate("/")
@@ -93,7 +93,7 @@ const Header = () => {
             </li>
             <li>
               <p
-                class={`${selected === "About" ? "text-blue-700" : "text-gray-700"} block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer`}
+                class={`${selected === "About" ? "text-blue-700" : "text-gray-700"} block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0  cursor-pointer`}
                 onClick={() => {
                   navigate("/about")
                   setSelected('About')
@@ -105,7 +105,7 @@ const Header = () => {
             <li>
               <p
                 href="/contact"
-                class={`${selected === "Contact" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
+                class={`${selected === "Contact" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0  cursor-pointer hover:text-blue-700`}
                 onClick={() => {
                   setSelected('Contact')
                   navigate("/contact")
@@ -116,7 +116,7 @@ const Header = () => {
             </li>
             <li>
               <p
-                class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
+                class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 cursor-pointer hover:text-blue-700`}
                 onClick={() => {
                   setSelected('Blog')
                   navigate("/blog")
@@ -126,7 +126,7 @@ const Header = () => {
               </p>
             </li>
             <div className='flex flex-col items-center'>
-              <div class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} flex items-center py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0 dark:text-white cursor-pointer hover:text-blue-700`}
+              <div class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} flex items-center py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0  cursor-pointer hover:text-blue-700`}
                 onMouseEnter={() => toggleDropdown(true)}
                 onMouseLeave={() => toggleDropdown(false)}
               >
@@ -136,7 +136,7 @@ const Header = () => {
               </svg>
               </div>
               {isDropdownVisible && (
-              <div id="dropdown" class="z-10 bg-white absolute top-20 divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 h-[90%] overflow-scroll"
+              <div id="dropdown" class="z-10 bg-white absolute top-20 divide-y divide-gray-100 rounded-lg shadow  h-[90%] overflow-scroll"
                   onMouseEnter={() => toggleDropdown(true)}
                   onMouseLeave={() => toggleDropdown(false)}
               >
@@ -257,7 +257,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 "
               >
                 Services
               </a>
@@ -265,7 +265,7 @@ const Header = () => {
             <li>
               <a
                 href="#"
-                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 "
               >
                 Elearning
               </a>
