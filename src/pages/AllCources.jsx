@@ -16,7 +16,7 @@ const AllCources = () => {
                     transition={{ duration: 1 }}       // Animation duration
                   
             className='w-[40%] h-[70%] rounded-lg p-5 absolute left-8 bg-[#0c2340]'>
-            <h1 className='text-6xl font-bold leading-normal text-[#e11d48]'>Cources We Offer</h1>
+            <h1 className='text-6xl font-bold leading-normal text-[#e11d48]'>Courses We Offer</h1>
             <p className='text-white leading-normal text-justify font-normal mb-[2rem]'>ProSafe First Aid Training School has been providing first aid training since 1999. We have 6 Campuses located in Surrey, Abbotsford, Burnaby, Vancouver, Port Coquitlam, and Richmond. While ProSafe is known for delivering First Aid training courses, we also offer classes in health and safety, mobile equipment operation, workplace safety and customer service.  In addition to training services, we also supply first aid supplies and equipment. Our professional and experienced instructors at ProSafe take pride in delivering the highest quality of training and offering flexible program scheduling in multiple languages</p>
             </motion.div>
         </div>
