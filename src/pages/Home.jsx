@@ -17,6 +17,7 @@ import testimonialImage from '../images/testimonialSectionGirl.jpg'
 import AllCourses from '../components/AllCourses'
 import whyChooseUslImage from '../images/whyChooseUs.jpg'
 import NewBrands from '../components/TrainingPartners'
+import HeroCarousel from '../components/HeroCarousel'
 // import NewBrands from '../components/TrainingPartners'
 
 
@@ -25,7 +26,7 @@ const Home = () => {
     <div className='home-page font-[Avenir]'>
         <Header />
         {/* <video class="elementor-video" src="https://dorsetcolleges.com/wp-content/uploads/2023/11/Dorset-V5.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video> */}
-        <div className='banner w-full h-[70vh] flex flex-col justify-center items-center ' style={{backgroundImage:`url(${homeBanner})`, backgroundPosition: 'center'}}>
+        {/* <div className='banner w-full h-[70vh] flex flex-col justify-center items-center ' style={{backgroundImage:`url(${homeBanner})`, backgroundPosition: 'center'}}>
             <div className=' backdrop-blur-[3px] py-2 px-5 rounded-lg flex flex-col justify-center' >
                 <h1 className='text-6xl font-extrabold leading-normal text-[#e11d48]'>LEARN TO SAVE LIVES</h1>
                 <p className='text-gray-800 text-lg leading-normal font-normal mb-[2rem]'>WELCOMES ON THE GO FIRST AID AND FIRST AID HERO!</p>
@@ -47,20 +48,10 @@ const Home = () => {
             <h1 className='text-5xl font-bold leading-normal text-[#e11d48]'>GET EMPLOYED, WORK SAFELY, SAVE LIVES.</h1>
             <p className='text-white leading-normal font-normal mb-[2rem]'>ProSafe First Aid Training School has been providing first aid training since 1999. We have 6 Campuses located in Surrey, Abbotsford, Burnaby, Vancouver, Port Coquitlam, and Richmond. While ProSafe is known for delivering First Aid training courses, we also offer classes in health and safety, mobile equipment operation, workplace safety and customer service.  In addition to training services, we also supply first aid supplies and equipment. Our professional and experienced instructors at ProSafe take pride in delivering the highest quality of training and offering flexible program scheduling in multiple languages</p>
             </div>
-        </div>
-        <div className='cardSection flex flex-col items-center justify-center bg-white'>
-            {/* <div>
-                <h1 className=' mb-[1.2rem] text-7xl text-[#3B73D0]'>Cources We Offer</h1>
-                <Divider />
-            </div> */}
-            {/* <div className='flex gap-4 items-center justify-center flex-wrap'>
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </div> */}
+        </div> */}
+        <HeroCarousel />
+
+        <div className='cardSection flex flex-col items-center justify-center bg-white w-full'>
             <AllCourses />
         </div>
         <div className='relative quote-section bg-[#0c2340] w-full h-[140vh] flex items-center'>

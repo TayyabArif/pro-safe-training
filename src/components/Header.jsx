@@ -1,9 +1,25 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [selected, setSelected] = useState("Home")
+  const [selected, setSelected] = useState("")
+  const location = useLocation();
+
+  useEffect(() => {
+    const pathname = location.pathname;
+    if (pathname === "/") {
+      setSelected("Home");
+    } else if (pathname === "/about") {
+      setSelected("About");
+    } else if (pathname === "/contact") {
+      setSelected("Contact");
+    } else if ("/blog") {
+      setSelected("Blog");
+    }
+  }, [location.pathname]);
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const toggleDropdown = (visible) => {
     setIsDropdownVisible(visible);
@@ -78,47 +94,43 @@ const Header = () => {
           class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
           id="mobile-menu-2"
         >
-          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-            <li>
+          <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-7 lg:mt-0">
+            <li className={`${selected === "Home" && "border border-blue-700 border-b-4 border-l-0 border-r-0 border-t-0 px-2"}`}>
               <p
-                class={`${selected === "Home" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 cursor-pointer`}
+                class={`${selected === "Home" ? "text-blue-700 text-xl font-semibold" : "text-gray-700 text-base"} block py-2 pr-4 pl-3 mb-1 rounded lg:bg-transparent lg:p-0 cursor-pointer`}
                 aria-current="page"
                 onClick={() => {
                   navigate("/")
-                  setSelected('Home')
                 }}
               >
                 Home
               </p>
             </li>
-            <li>
+            <li className={`${selected === "About" && "border border-blue-700 border-b-4 border-l-0 border-r-0 border-t-0 px-2"}`}>
               <p
-                class={`${selected === "About" ? "text-blue-700" : "text-gray-700"} block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0  cursor-pointer`}
+                class={`${selected === "About" ? "text-blue-700 text-xl font-semibold" : "text-gray-700 text-base"} block py-2 pr-4 pl-3 mb-1 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-blue-700 lg:p-0  cursor-pointer`}
                 onClick={() => {
                   navigate("/about")
-                  setSelected('About')
                 }}
               >
                 About
               </p>
             </li>
-            <li>
+            <li className={`${selected === "Contact" && "border border-blue-700 border-b-4 border-l-0 border-r-0 border-t-0 px-2"}`}>
               <p
                 href="/contact"
-                class={`${selected === "Contact" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0  cursor-pointer hover:text-blue-700`}
+                class={`${selected === "Contact" ? "text-blue-700 text-xl font-semibold" : "text-gray-700 text-base"} block py-2 pr-4 pl-3 mb-1 rounded lg:bg-transparent lg:p-0  cursor-pointer hover:text-blue-700`}
                 onClick={() => {
-                  setSelected('Contact')
                   navigate("/contact")
                 }}
               >
                 Contact
               </p>
             </li>
-            <li>
+            <li className={`${selected === "Blog" && "border border-blue-700 border-b-4 border-l-0 border-r-0 border-t-0 px-2"}`}>
               <p
-                class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} block py-2 pr-4 pl-3  rounded lg:bg-transparent lg:p-0 cursor-pointer hover:text-blue-700`}
+                class={`${selected === "Blog" ? "text-blue-700 text-xl font-semibold" : "text-gray-700 text-base"} block py-2 pr-4 pl-3 mb-1 rounded lg:bg-transparent lg:p-0 cursor-pointer hover:text-blue-700`}
                 onClick={() => {
-                  setSelected('Blog')
                   navigate("/blog")
                 }}
               >
