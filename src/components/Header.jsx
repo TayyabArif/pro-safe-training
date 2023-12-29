@@ -141,6 +141,10 @@ const Header = () => {
               <div class={`${selected === "Blog" ? "text-blue-700" : "text-gray-700 "} flex items-center py-2 pr-4 pl-3 rounded lg:bg-transparent lg:p-0  cursor-pointer hover:text-blue-700`}
                 onMouseEnter={() => toggleDropdown(true)}
                 onMouseLeave={() => toggleDropdown(false)}
+                onClick={() => {
+                  setSelected('Courses')
+                  navigate("/all-courses")
+                }}
               >
                 Courses
                 <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
