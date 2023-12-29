@@ -16,7 +16,7 @@ const CourseCard = () => {
 
       <div class="group p-2 grid z-10">
         <a
-          href='/course-details'
+          href='/courses-details'
           class="group-hover:text-cyan-700 font-bold sm:text-2xl line-clamp-2"
         >
          Occupational First Aid (OFA) Level 1
