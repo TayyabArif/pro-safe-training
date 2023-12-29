@@ -34,9 +34,6 @@ const AllCources = () => {
         <div className='content-section flex flex-col py-2 container mx-auto'>
             <div class="flex flex-wrap items-center mt-10 text-left text-center">
                 <motion.div
-                            initial={{ x: -200, opacity: 0 }}  // Start position (off-screen to the left)
-                            whileInView={{ x: 0, opacity: 1 }}     // End position (original position)
-                            transition={{ duration: 1 }}       // Animation duration
                 class="w-full md:w-3/5 lg:w-1/2 px-4">
                     <img src={FirstAid} alt="gem" class="inline-block rounded shadow-lg border h-[19rem] border-merino-400" />
                 </motion.div>
@@ -52,9 +49,6 @@ const AllCources = () => {
 
             <div class="flex flex-wrap items-center mt-20 text-left text-center">
             <motion.div
-                            initial={{ x: 200, opacity: 0 }}  // Start position (off-screen to the left)
-                            whileInView={{ x: 0, opacity: 1 }}     // End position (original position)
-                            transition={{ duration: 1 }}       // Animation duration
                 class="w-full md:w-3/5 lg:w-1/2 px-4">
                     <img src={FirstAid} alt="gem" class="inline-block rounded shadow-lg border h-[19rem] border-merino-400" />
                 </motion.div>
@@ -70,9 +64,6 @@ const AllCources = () => {
 
             <div class="flex flex-wrap items-center mt-10 text-left text-center">
             <motion.div
-                            initial={{ x: -200, opacity: 0 }}  // Start position (off-screen to the left)
-                            whileInView={{ x: 0, opacity: 1 }}     // End position (original position)
-                            transition={{ duration: 1 }}       // Animation duration
                 class="w-full md:w-3/5 lg:w-1/2 px-4">
                     <img src={FirstAid} alt="gem" class="inline-block rounded shadow-lg border h-[19rem] border-merino-400" />
                 </motion.div>
@@ -88,9 +79,6 @@ const AllCources = () => {
 
             <div class="flex flex-wrap items-center mt-20 text-left text-center">
             <motion.div
-                            initial={{ x: 200, opacity: 0 }}  // Start position (off-screen to the left)
-                            whileInView={{ x: 0, opacity: 1 }}     // End position (original position)
-                            transition={{ duration: 1 }}       // Animation duration
                 class="w-full md:w-3/5 lg:w-1/2 px-4">
                     <img src={FirstAid} alt="gem" class="inline-block rounded shadow-lg border h-[19rem] border-merino-400" />
                 </motion.div>
