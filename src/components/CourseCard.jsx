@@ -26,7 +26,7 @@ const CourseCard = () => {
             (English)
         </span>
         <div >
-          <span class="line-clamp-4 py-1 text-sm text-left font-light leading-relaxed">
+          <span class="line-clamp-4 py-1 text-sm font-light leading-relaxed">
           A two-day course offering first aid and cardiopulmonary resuscitation (CPR) skills for those who need training due to work requirements or who want more knowledge to respond to emergencies at home.          </span>
         </div>
         <div class=" grid-cols-2 flex group justify-between">
